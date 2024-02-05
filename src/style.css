@@ -1,0 +1,132 @@
+body{
+    background-color: #fff; 
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+
+
+.navigation .menu-navigation{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.logo{
+    color: var(--logo-span-color);
+    font-size: 25px;
+    font-family: var(--font-logo);
+    padding-left: 40px;
+    
+}
+
+
+.menu-navigation li{
+    margin-right: 30px;
+}
+
+.menu-navigation  a{
+    color: var(--color-nav-paragraph);
+    font-family: var(--font-mulish);
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+.menu-navigation  a:hover{
+    color: #000;
+    transition: 0.3s;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+ .image-fitness{
+   padding-right: 50px;
+}
+
+ .about{
+    width: 600px;
+    margin: 0px 60px;
+}
+
+.main .about h1{
+    font-family: var(--font-mulish);
+    font-weight: 400;
+    color: #000;
+    font-size: 50px;
+}
+
+.main .about .text-color{
+    color: var(--logo-span-color);
+    font-weight: 600;
+}
+
+.main .about p{
+    font-family: var(--font-open-sans);
+    color: var(--color-nav-paragraph);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.about  .negrito-text{
+    font-weight: 800;
+}
+
+
+
+.about button{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    font-family: var(--font-dm-sans);
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.about button:hover{
+    transition: 0.6s;
+    box-shadow: 0 0 5px var(--button-color),
+    0 0 20px var(--button-color),
+    0 0 20px var(--button-color), 
+    0 0 40px var(--button-color),
+    0 0 40px var(--button-color);
+    
+}
+
+.about img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.footer p{
+    font-family: var(--font-open-sans);
+}
+
+
+
+
+
+
+
