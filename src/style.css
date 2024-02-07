@@ -1,132 +1,145 @@
-body{
-    background-color: #fff; 
+body {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: space-around;
+  padding: 2dvh 0 1dvh;
 }
 
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-
-
-.navigation .menu-navigation{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.navigation .menu-navigation {
+  display: flex;
+  gap: 50px;
+  list-style: none;
 }
 
-.logo{
-    color: var(--logo-span-color);
-    font-size: 25px;
-    font-family: var(--font-logo);
-    padding-left: 40px;
-    
+.logo {
+  color: var(--logo-span-color);
+  font-family: var(--font-logo);
+  font-size: 25px;
 }
 
-
-.menu-navigation li{
-    margin-right: 30px;
+.menu-navigation a {
+  color: var(--color-nav-paragraph);
+  font-family: var(--font-mulish);
+  font-weight: 600;
 }
 
-.menu-navigation  a{
-    color: var(--color-nav-paragraph);
-    font-family: var(--font-mulish);
-    font-weight: 600;
-    padding-right: 50px;
+.menu-navigation a:hover {
+  color: #000;
+  transition: 0.3s;
 }
 
-.menu-navigation  a:hover{
-    color: #000;
-    transition: 0.3s;
+.main {
+  align-items: center;
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: 1fr 1fr;
 }
 
-.main{
-    display: flex;
+.image-fitness {
+  display: flex;
+  justify-content: end;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.main .about h1 {
+  color: #000;
+  font-family: var(--font-mulish);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.main .about .text-color {
+  color: var(--logo-span-color);
+  font-weight: 600;
+}
+
+.main .about p {
+  color: var(--color-nav-paragraph);
+  font-family: var(--font-open-sans);
+  line-height: 25px;
+}
+
+.about .negrito-text {
+  font-weight: 800;
+}
+
+.about button {
+  align-items: center;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-dm-sans);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 1rem 2rem;
+  width: fit-content;
+}
+
+.about button:hover {
+  box-shadow: 0px 0px 40px 3px rgba(105, 185, 157, 0.66);
+  transition: 0.4s;
+  -moz-box-shadow: 0px 0px 40px 3px rgba(105, 185, 157, 0.66);
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(105, 185, 157, 0.66);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: var(--font-open-sans);
+}
+
+@media (max-width: 1600px) {
+  .main {
     align-items: center;
-    justify-content:center;
-}
-
-
- .image-fitness{
-   padding-right: 50px;
-}
-
- .about{
-    width: 600px;
-    margin: 0px 60px;
-}
-
-.main .about h1{
-    font-family: var(--font-mulish);
-    font-weight: 400;
-    color: #000;
-    font-size: 50px;
-}
-
-.main .about .text-color{
-    color: var(--logo-span-color);
-    font-weight: 600;
-}
-
-.main .about p{
-    font-family: var(--font-open-sans);
-    color: var(--color-nav-paragraph);
-    line-height: 25px;
-    margin-top: 20px;
-}
-
-.about  .negrito-text{
-    font-weight: 800;
-}
-
-
-
-.about button{
-    border: none;
     display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  .about {
     align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 150px;
-    background-color: var(--button-color);
-    border-radius: 5px;
-    font-family: var(--font-dm-sans);
-    color: #fff;
-    margin-top: 40px;
-    cursor: pointer;
-}
-
-.about button:hover{
-    transition: 0.6s;
-    box-shadow: 0 0 5px var(--button-color),
-    0 0 20px var(--button-color),
-    0 0 20px var(--button-color), 
-    0 0 40px var(--button-color),
-    0 0 40px var(--button-color);
-    
-}
-
-.about img{
-    width: 20px;
-    margin-right: 8px;
-}
-
-.footer{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
-    margin-top: 30px;
+    max-width: 90dvw;
+  }
 
+  .image-fitness img {
+    height: 50%;
+  }
 }
 
-.footer p{
-    font-family: var(--font-open-sans);
+@media (max-width: 500px) {
+  body {
+    gap: 30px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-
-
-
-
-
-
-

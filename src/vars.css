@@ -1,13 +1,11 @@
-:root{
+:root {
+	--color-nav-paragraph: #7d7987;
+	--logo-span-color: #89c5cc;
+	--button-color: #69b99d;
+	--button-shadow: #69b99d50;
 
-    --color-nav-paragraph: #7D7987;
-    --logo-span-color: #89C5CC;
-    --button-color: #69B99D;
-    
-
-
-    --font-mulish: 'Mulish', sans-serif;
-    --font-logo: 'Inter', sans-serif;
-    --font-open-sans: 'Open Sans', sans-serif;
-    --font-dm-sans: 'DM Sans', sans-serif;
+	--font-mulish: "Mulish", sans-serif;
+	--font-logo: "Inter", sans-serif;
+	--font-open-sans: "Open Sans", sans-serif;
+	--font-dm-sans: "DM Sans", sans-serif;
 }
